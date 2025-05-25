@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+data
+
+# Virtual Environment
+object_detection_env/
+venv/
+env/
+ENV/
+VENV/
+*.venv
+
+# IDE / Editor specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dataset - Assuming 'data' directory contains downloaded datasets
+data/VOCdevkit/
+# If you have other large files directly in 'data' you want to ignore, add them:
+# data/some_large_file.zip
+
+# Model checkpoints - Assuming 'models' directory contains saved .pth files
+models/*.pth
+# If you have a specific test model you *do* want to track, you can negate it
+# !models/my_important_test_model.pth
+# But generally, large model files are not tracked.
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# IPython Notebook checkpoints
+.ipynb_checkpoints
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# PyTorch Cache (where downloaded pre-trained models might go)
+# This path might vary based on OS and PyTorch version
+# Consider adding if you notice it being tracked or want to be thorough
+# C:\Users\YourUser\.cache\torch\
+# ~/.cache/torch/
+
+# Any other large files or directories specific to your setup
+# example_large_outputs/
